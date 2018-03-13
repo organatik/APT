@@ -16,11 +16,11 @@ export class ContentComponent implements OnInit {
         },
         {
           'photoName': 'Passport2',
-          'photoUrl': '../assets/driver.jpg'
+          'photoUrl': '../assets/passport2.jpg'
         },
         {
           'photoName': 'Passport3',
-          'photoUrl': '../assets/passport.jpg'
+          'photoUrl': '../assets/passport3.jpeg'
         },
       ]
     },
@@ -28,12 +28,16 @@ export class ContentComponent implements OnInit {
       'globalName': 'Driver Licence 2 from 2',
       'details': [
         {
-          'photoName': 'Passport1',
+          'photoName': 'Driver1',
           'photoUrl': '../assets/driver.jpg'
         },
         {
-          'photoName': 'Passport2',
-          'photoUrl': '../assets/passport.jpg'
+          'photoName': 'Driver2',
+          'photoUrl': '../assets/driver2.jpg'
+        },
+        {
+          'photoName': 'Driver3',
+          'photoUrl': '../assets/driver3.jpg'
         },
       ]
     },

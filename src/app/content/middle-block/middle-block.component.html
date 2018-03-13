@@ -1,7 +1,7 @@
 <div class="col-md-9 wrapper-middle">
   <mat-tab-group [@.disabled]="true">
     <mat-tab label="Сопровождение дела">
-      <ng-template [ngIf]= "item !== undefined">
+      <div *ngIf= "item !== undefined">
         <div class="col-md-12 tab-body">
           <img [src]="photos[item].details[index].photoUrl" alt="passport" (click)="test()" >
         </div>
@@ -16,9 +16,9 @@
           <i class="fa fa-angle-right" aria-hidden="true"></i>
         </span>
         </div>
-      </ng-template>
+      </div>
       <div *ngIf="item == undefined" >
-        <div class="col-md-12 tab-body">
+        <div class="col-md-12 tab-body" style="min-height: calc(100vh - 285px)">
           <p style="position: absolute;text-align: center;top: 41%;left: 40%;font-weight: bold;">Нет изображения для просмотра</p>
         </div>
       </div>
