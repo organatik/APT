@@ -3,10 +3,10 @@
     <mat-tab label="Сопровождение дела">
       <ng-template [ngIf]= "item !== undefined">
         <div class="col-md-12 tab-body">
-          <img [src]="photos[item].details[detailPhotoIndex].photoUrl" alt="passport" (click)="test()" >
+          <img [src]="photos[item].details[index].photoUrl" alt="passport" (click)="test()" >
         </div>
         <div class="col-md-12 img-controls">
-          <select [(ngModel)]="detailPhotoIndex">
+          <select [(ngModel)]="index">
             <option *ngFor="let c of photos[item].details;let i = index" [value]="i">{{c.photoName}}</option>
           </select>
           <span (click)="prevPhoto()">

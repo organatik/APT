@@ -8,7 +8,6 @@ import {SelectedItemService} from '../../selected-item.service';
 })
 export class RightSideBarComponent implements OnInit {
   mySelectedItem;
-  index;
   @Input() photos;
   constructor( private selectedItem: SelectedItemService) { }
   ngOnInit() {

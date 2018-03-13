@@ -8,10 +8,9 @@ import { SelectedItemService } from '../../selected-item.service';
 })
 export class MiddleBlockComponent implements OnInit  {
   item;
-  index;
-  detailPhotoIndex = 0;
+  index = 0;
   @Input() photos;
-  selectedValue;
+
 
 
   constructor( private selectedItem: SelectedItemService) { }
@@ -20,8 +19,6 @@ export class MiddleBlockComponent implements OnInit  {
   ngOnInit() {
     this.selectedItem.currentItem.subscribe(item => this.item = item);
     this.selectedItem.currentPhoto.subscribe(index => this.index = index);
-    console.log(this.detailPhotoIndex);
-    console.log(this.item);
   }
 //   ngAfterViewChecked() {
 //     this.detailPhotoIndex = this.index;
@@ -29,19 +26,16 @@ export class MiddleBlockComponent implements OnInit  {
 //
 // }
 
-  test() {
-    console.log(this.selectedValue);
-  }
   nextPhoto() {
-    if (this.detailPhotoIndex < this.photos[this.item].details.length - 1) {
-      this.detailPhotoIndex = this.detailPhotoIndex + 1;
-      console.log(this.detailPhotoIndex);
+    if (this.index < this.photos[this.item].details.length - 1) {
+      this.index = this.index + 1;
+      console.log(this.index);
     }
   }
   prevPhoto() {
-    if (this.detailPhotoIndex > 0) {
-      this.detailPhotoIndex = this.detailPhotoIndex - 1;
-      console.log(this.detailPhotoIndex);
+    if (this.index > 0) {
+      this.index = this.index - 1;
+      console.log(this.index);
     }
   }
 }
