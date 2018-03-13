@@ -1,0 +1,118 @@
+/*HIDE unuse elements in tabs*/
+/deep/ .mat-tab-header-pagination  {
+  display: none !important;
+}
+
+/deep/ .mat-ripple-element {
+  display: none !important;
+}
+/*HIDE unuse elements in tabs*/
+.wrapper{
+  padding: 0;
+  -moz-box-shadow: 0 0 5px 3px #88888847;
+  -webkit-box-shadow: 0 0 5px 3px #88888847;
+  box-shadow: 0 0 5px 3px #88888847;
+}
+
+
+/*STYLE TABS*/
+/deep/ .wrapper .mat-tab-label {
+  background-color: #efeeef;
+  border: 1px solid #b7b3b3 ;
+  height: 25px!important;
+  min-width: 50%!important;
+  width: 50%;
+
+}
+/deep/  .mat-tab-label:hover {
+  background-color: #d5d4d5;
+}
+/deep/ .mat-tab-labels{
+  display: block!important;
+}
+/deep/ .wrapper .mat-tab-label-active {
+  background-color: #fff;
+  border: 1px solid #b7b3b3;
+  font-weight: bold;
+  opacity: 1;
+}
+.tab-body{
+  border-left: 1px solid #cccbcc;
+  border-right: 1px solid #cccbcc;
+  border-bottom: 1px solid #cccbcc;
+  padding-top: 10px;
+  min-height: calc(100vh - 264px); ;
+  max-height: calc(100vh - 264px);
+  overflow-y: auto;
+}
+.tab-body input {
+  width: 100%;
+  border: 1px solid #d9d7d9;
+  outline: none;
+  padding: 0 10px;
+  height: 26px;
+}
+.tab-body textarea {
+  width: 100%;
+  border: 1px solid #d9d7d9;
+  outline: none;
+  padding: 0 10px;
+  height: 50px;
+}
+.tab-body select {
+  width: 100%;
+  border: 1px solid #d9d7d9;
+  outline: none;
+  padding: 0 10px;
+  height: 26px;
+}
+.tab-body .col-md-5 {
+  padding: 0;
+}
+.tab-body .row {
+  margin: 10px 0;
+}
+.check input {
+  width: 15px;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+.check span {
+
+}
+/*STYLE TABS*/
+
+/*FOOTER LEFT SIDE STYLES*/
+.left-side-footer span {
+  display: block;
+}
+.left-side-footer {
+  padding: 0;
+}
+.footer-body {
+  border-top: 1px solid #b7b3b3;
+  border-right: 1px solid #b7b3b3;
+  border-bottom: 1px solid #b7b3b3;
+  padding: 0;
+}
+.footer-body .row {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.footer-body .row:hover {
+  cursor: pointer;
+  background-color: #e2e1e2;
+}
+.controls{
+  border-right: 1px solid #b7b3b3;
+}
+.controls button  {
+  margin: 5px 5px;
+  background-color: buttonface
+}
+.controls select  {
+  margin: 5px 0px;
+  height: 26px;
+  background-color: buttonface;
+  width: 90px;
+}

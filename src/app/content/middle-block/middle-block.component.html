@@ -1,0 +1,32 @@
+<div class="col-md-9 wrapper-middle">
+  <mat-tab-group [@.disabled]="true">
+    <mat-tab label="Сопровождение дела">
+      <ng-template [ngIf]= "item !== undefined">
+        <div class="col-md-12 tab-body">
+          <img [src]="photos[item].details[detailPhotoIndex].photoUrl" alt="passport" (click)="test()" >
+        </div>
+        <div class="col-md-12 img-controls">
+          <select [(ngModel)]="detailPhotoIndex">
+            <option *ngFor="let c of photos[item].details;let i = index" [value]="i">{{c.photoName}}</option>
+          </select>
+          <span (click)="prevPhoto()">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </span>
+          <span (click)="nextPhoto()">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </span>
+        </div>
+      </ng-template>
+      <div *ngIf="item == undefined" >
+        <div class="col-md-12 tab-body">
+          <p style="position: absolute;text-align: center;top: 41%;left: 40%;font-weight: bold;">Нет изображения для просмотра</p>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Работа по ОСАГО">
+      <div class="col-md-12 tab-body">
+        asdasdadaLorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, natus, quasi! Atque cumque dicta dolore doloremque, dolores eum itaque laudantium maiores minus nobis quod similique sint voluptates? Assumenda exercitationem facilis, fugit magnam magni quidem. Cum iste labore libero minima quam quas quidem sunt ut vitae. Blanditiis consectetur doloremque eaque eligendi!
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

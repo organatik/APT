@@ -1,0 +1,100 @@
+/deep/ .mat-tab-header-pagination  {
+  display: none !important;
+}
+
+/deep/ .mat-ripple-element {
+  display: none !important;
+}
+/*HIDE unuse elements in tabs*/
+.wrapper-footer{
+  clear: both;
+  padding-top: 5px;
+}
+
+
+/*STYLE TABS*/
+/deep/ .wrapper-footer .mat-tab-label {
+  background-color: #efeeef;
+  border: 1px solid #b7b3b3 ;
+  height: 25px!important;
+}
+/deep/  .mat-tab-label:hover {
+  background-color: #d5d4d5;
+}
+/deep/ .mat-tab-labels{
+  display: block!important;
+}
+/deep/ .wrapper-footer .mat-tab-label-active {
+  background-color: #fff;
+  border: 1px solid #b7b3b3;
+  font-weight: bold;
+  opacity: 1;
+}
+/*STYLE TABS*/
+
+/*CUSTOM STYLES*/
+.search{
+  padding: 10px 0;
+}
+.search input{
+  border: 1px solid #d9d7d9;
+  outline: none;
+  padding: 0 10px;
+  height: 26px;
+}
+.my-table{
+  padding: 5px 10px;
+  border: 1px solid #b7b3b3;
+  min-height: 173px;
+  max-height: 173px;
+  overflow-y: auto;
+}
+.my-table table{
+  width: 100%;
+}
+.my-table table td {
+  padding: 5px 10px;
+}
+.my-table table td:first-child {
+  font-weight: bold;
+}
+.my-table table td:nth-child(2) {
+  font-weight: bold;
+  padding-left: 20px;
+}
+.my-table table td:nth-child(3) {
+  font-weight: bold;
+  padding-left: 20px;
+  color: red;
+  text-align: center;
+}
+.my-table table td:nth-child(4) {
+  font-weight: bold;
+  padding-left: 10px;
+}
+.my-table table td:nth-child(3) i {
+  margin: 0 3px;
+}
+.my-table table {
+  border-collapse: collapse;
+}
+
+.my-table table, th, td {
+  border: 1px solid #b7b3b3;
+
+}
+
+.right-table {
+  padding: 5px 10px;
+  border: 1px solid #b7b3b3;
+  min-height: 173px;
+  max-height: 173px;
+  overflow-y: auto;
+  font-weight: bold;
+}
+.right-table table{
+  width: 100%;
+}
+.right-table table td {
+  padding: 5px 10px;
+}
