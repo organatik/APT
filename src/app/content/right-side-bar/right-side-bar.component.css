@@ -5,10 +5,14 @@
   -moz-box-shadow: 0 0 5px 3px #88888847;
   -webkit-box-shadow: 0 0 5px 3px #88888847;
   box-shadow: 0 0 5px 3px #88888847;
-  padding-top: 17px;
   width: 24%;
   margin-left: 1%;
 }
+.controls {
+  border-bottom: 1px solid #b7b3b3;
+  padding: 3px 0;
+}
+
 .wrapper-right-side p {
   padding: 5px 17px;
   margin-bottom: 0;

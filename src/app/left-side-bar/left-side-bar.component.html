@@ -1,8 +1,8 @@
 <div class="col-md-3 wrapper">
   <mat-tab-group [@.disabled]="true">
-    <div class="col-md-12">
+    <div class="col-md-12 ">
       <!--TAB ВОДИТЕЛЬ START-->
-      <mat-tab label="Водитель">
+      <mat-tab label="Водитель" class="tripl">
         <div class="col-md-12 tab-body">
           <div class="row">
             <div class="col-md-12 check">
@@ -173,7 +173,7 @@
       <!--TAB ВОДИТЕЛЬ END-->
 
       <!--TAB АВТОМОБИЛЬ START-->
-      <mat-tab label="Автомобиль">
+      <mat-tab label="Автомобиль" class="tripl" >
         <div class="col-md-12 tab-body">
           <div class="row">
             <span style="font-weight: bold;">Автомобиль:</span>
@@ -358,6 +358,62 @@
           </div>
         </div>
       </mat-tab>
+      <mat-tab label="ОСАГО" class="tripl">
+        <div class="col-md-12 tab-body">
+          <div class="col-md-4">
+            <select style="background-color: buttonface;border: 1px solid #b7b3b3">
+              <option>Test1</option>
+              <option>Test2</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <input type="text">
+          </div>
+          <div class="row" style="margin-top: 50px;">
+            <div class="col-md-5">
+              <span>Дата заключения:</span>
+            </div>
+            <div class="col-md-7">
+              <input type="date">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <span>Дата начала действия:</span>
+            </div>
+            <div class="col-md-7">
+              <input type="date">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <span>Дата окончания:</span>
+            </div>
+            <div class="col-md-7">
+              <input type="date">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <span>Страховая компания:</span>
+            </div>
+            <div class="col-md-7">
+              <select>
+                <option>Test1</option>
+                <option>Test2</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <span>Адрес:</span>
+            </div>
+            <div class="col-md-7">
+              <textarea  id="" cols="20" rows="5"></textarea>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
       <!--TAB АВТОМОБИЛЬ END-->
     </div>
     <div class="col-md-12">
@@ -518,41 +574,6 @@
             </div>
             <div class="col-md-7">
               <input type="text">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5">
-              <span>Страховой полис номер:</span>
-            </div>
-            <div class="col-md-7">
-              <input type="text">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5">
-              <span>Страховая компания:</span>
-            </div>
-            <div class="col-md-7">
-              <select>
-                <option>Пункт 1</option>
-                <option>Пункт 2</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5">
-              <span>Адрес страховой:</span>
-            </div>
-            <div class="col-md-7">
-              <textarea></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5">
-              <span>Страховой полис годен до:</span>
-            </div>
-            <div class="col-md-7">
-              <input type="date">
             </div>
           </div>
           <div class="row">
