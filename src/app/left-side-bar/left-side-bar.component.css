@@ -27,25 +27,19 @@
 
 }
 /deep/ .wrapper .mat-tab-label:first-child{
-  background-color: #efeeef;
-  border: 1px solid #b7b3b3 ;
-  height: 25px!important;
+
   min-width: 33%!important;
   width: 33.33%!important;
 
 }
 /deep/ .wrapper .mat-tab-label:nth-child(2) {
-  background-color: #efeeef;
-  border: 1px solid #b7b3b3 ;
-  height: 25px!important;
+
   min-width: 33.33%!important;
   width: 33.33%!important;
 
 }
 /deep/ .wrapper .mat-tab-label:nth-child(3){
-  background-color: #efeeef;
-  border: 1px solid #b7b3b3 ;
-  height: 25px!important;
+
   min-width: 33.33%!important;
   width: 33.33%!important;
 
